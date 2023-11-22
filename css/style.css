@@ -1,0 +1,561 @@
+/* ==============================================================================
+                      Font (Poppins) Link Start Here
+================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* ==============================================================================
+                      Font (Manrope) Link Start Here
+================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/* =====================================================
+                Common Css Start Here
+========================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+a,
+img,
+div,
+li,
+i {
+  margin: 0;
+  padding: 0;
+  line-height: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --manrope: "Manrope", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --primaryBgColor: #1c1e53;
+  --white: #fff;
+  --darkBlue: #282938;
+  --yellow: #fcd980;
+  --royalBlue: #2405f2;
+  --grey: #f4f6fc;
+}
+/* =====================================================
+                Common Css End Here
+========================================================*/
+
+/* ====================================================================================================================
+                                                  Nav part Css Start Here
+=======================================================================================================================*/
+#nav-part {
+  background-color: var(--primaryBgColor);
+  padding: 25px 0;
+}
+
+#nav-part .custom-nav ul li a {
+  color: #bbbbcb;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 25px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#nav-part .custom-nav ul li a:hover {
+  color: var(--white);
+}
+
+#nav-part .custom-nav button {
+  margin-left: 48px;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 48px;
+  background: transparent;
+  border-radius: 41px;
+  border: 2px solid #f4f6fc33;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#nav-part .custom-nav button:hover {
+  background-color: var(--yellow);
+  color: var(--darkBlue);
+}
+/* ====================================================================================================================
+                                                  Nav part Css End Here
+=======================================================================================================================*/
+
+/* ====================================================================================================================
+                                                  Pricing part Css Start Here
+=======================================================================================================================*/
+#pricing-part {
+  padding: 128px 0;
+}
+
+#pricing-part .pricing-heading {
+  padding-bottom: 64px;
+}
+
+#pricing-part .pricing-heading h1 {
+  color: var(--darkBlue, #282938);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  padding-bottom: 16px;
+}
+
+#pricing-part .pricing-heading p {
+  color: var(--darkBlue, #282938);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.7;
+  padding: 0 293px;
+}
+
+#pricing-part .price-box {
+  padding: 64px 0 62px 48px;
+  background-color: var(--grey);
+  border-radius: 12px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+/* .price-overlay {
+  top: 0;
+  left: 0;
+
+  background: #ffffff0f;
+  width: 1151px;
+  height: 1151px;
+  border-radius: 1151px;
+  -webkit-border-radius: 1151px;
+  -moz-border-radius: 1151px;
+  -ms-border-radius: 1151px;
+  -o-border-radius: 1151px;
+} */
+
+/* ===================== Price Hover Sec Start ======================= */
+
+#pricing-part .price-box:hover {
+  background-color: var(--primaryBgColor);
+  transform: translateY(-3%);
+  -webkit-transform: translateY(-3%);
+  -moz-transform: translateY(-3%);
+  -ms-transform: translateY(-3%);
+  -o-transform: translateY(-3%);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#pricing-part .price-box:hover .main-price h2 {
+  color: #fff;
+}
+
+#pricing-part .price-box:hover .main-price p {
+  color: var(--yellow);
+}
+
+#pricing-part .price-box:hover h3 {
+  color: #fff;
+}
+
+#pricing-part .price-box:hover h4 {
+  color: #fff;
+}
+
+#pricing-part .price-box:hover .feature p {
+  color: #fff;
+}
+
+#pricing-part .price-box:hover .price-btn button {
+  background-color: var(--yellow);
+  color: var(--darkBlue);
+}
+
+/* ===================== Price Hover Sec End ======================= */
+
+#pricing-part .price-box .h4 {
+  padding-right: 20px;
+  padding-bottom: 47px;
+}
+
+#pricing-part .price-box #h4 {
+  padding-bottom: 43px;
+}
+
+#pricing-part .price-box .main-price h2 {
+  color: var(--darkBlue, #282938);
+  font-size: 38px;
+  font-weight: 600;
+}
+
+#pricing-part .price-box .main-price p {
+  color: var(--royalBlue, #2405f2);
+  font-size: 16px;
+  padding-left: 8px;
+  font-weight: 400;
+}
+
+#pricing-part .price-box h3 {
+  color: var(--darkBlue, #282938);
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+#pricing-part .price-box h4 {
+  color: var(--darkBlue, #282938);
+  font-size: 16px;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 80px;
+}
+
+#pricing-part .price-box .feature {
+  margin-bottom: 20px;
+}
+
+#pricing-part .price-box .feature i {
+  color: #97daad;
+  padding-right: 12px;
+  font-size: 24px;
+  line-height: none;
+}
+
+#pricing-part .price-box .feature-4 i {
+  color: #b4b3b3;
+}
+
+#pricing-part .price-box .feature-5 i {
+  color: #b4b3b3;
+}
+
+#pricing-part .price-box .feature p {
+  color: var(--darkBlue, #282938);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#pricing-part .price-box .price-btn button {
+  background: var(--darkBlue);
+  color: var(--grey);
+  border: 0;
+  border-radius: 41px;
+  padding: 15px 51px;
+  margin-top: 61px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  margin-left: 40px;
+  margin-right: 45px;
+}
+
+#pricing-part .price-box .price-btn button:hover {
+  background-color: var(--royalBlue);
+  color: var(--grey);
+  transform: translateY(-15%);
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  -ms-transform: translateY(-15%);
+  -o-transform: translateY(-15%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* ====================================================================================================================
+                                                  Pricing part Css End Here
+=======================================================================================================================*/
+
+/* =========================================================================================================
+                                         Question part Css Start Here
+===========================================================================================================*/
+#question-part {
+  padding: 128px 0;
+}
+
+#question-part .question-left h3 {
+  color: var(--primaryTextColor, #282938);
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 56px;
+  padding-bottom: 16px;
+}
+
+#question-part .question-left a {
+  display: inline-block;
+  color: #2405f2;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  padding: 8px 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+#question-part .question-left a:hover {
+  color: var(--primaryTextColor);
+  background-color: var(--yellow);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+
+#question-part .question-right .accordion-header span {
+  color: #2405f2;
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 58px;
+}
+
+#question-part .question-right h2 {
+  color: var(--primaryTextColor);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#question-part .accordion-body {
+  color: var(--primaryTextColor, #282938);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 105px;
+  padding-top: 16px;
+}
+
+#question-part .accordion .accordion-item {
+  outline: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* =========================================================================================================
+                                         Question part Css End Here
+===========================================================================================================*/
+
+/* =========================================================================================================
+                                         Footer part Css Start Here
+===========================================================================================================*/
+#footer-part {
+  background-color: var(--primaryBgColor);
+  padding-top: 100px;
+}
+
+#footer-part .footer-left p {
+  color: var(--White, #fff);
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 500;
+  line-height: 28px;
+  padding-top: 22px;
+  padding-bottom: 86px;
+  padding-right: 20px;
+}
+
+#footer-part .footer-left .footer-contact {
+  background-color: var(--yellow);
+  padding: 18px 37px;
+  column-gap: 29px;
+}
+
+#footer-part .footer-left .footer-contact h3 {
+  color: var(--primaryTextColor, #282938);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#footer-part .footer-left .footer-contact a {
+  color: var(--primaryTextColor, #282938);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#footer-part .footer-left .footer-contact a:hover {
+  text-decoration: underline;
+}
+
+#footer-part .footer-right h2 {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 14px;
+}
+
+#footer-part .footer-right p {
+  color: var(--Grey, #f4f6fc);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.8;
+  padding-bottom: 28px;
+  padding-right: 146px;
+}
+
+#footer-part .footer-right .footer-icon a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 31px;
+  border: 2px solid #fff;
+  text-align: center;
+  margin-right: 18px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+#footer-part .footer-right .footer-icon a:nth-child(1) {
+  color: #2f55a4;
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(2) {
+  color: #1da1f2;
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(3) {
+  color: #f56040;
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(4) {
+  color: #0a66c2;
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(1):hover {
+  background-color: #2f55a4;
+  color: #fff;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(2):hover {
+  background-color: #1da1f2;
+  color: #fff;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(3):hover {
+  background-color: #f56040;
+  color: #fff;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+
+#footer-part .footer-right .footer-icon a:nth-child(4):hover {
+  background-color: #0a66c2;
+  color: #fff;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+/* =========================================================================================================
+                                         Footer part Css End Here
+===========================================================================================================*/
+
+/* =========================================================================================================
+                                         Footer nav part Css Start Here
+===========================================================================================================*/
+
+/* #footer-nav {
+  padding: 25px 0;
+} */
+
+#footer-nav .custom-logo {
+  color: var(--darkBlue, #282938);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#footer-nav .custom-logo:hover {
+  text-decoration: underline;
+}
+
+#footer-nav .custom-nav ul li a {
+  color: var(--darkBlue, #282938);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 25px;
+  transition: all linear 0.2s;
+  padding: 25px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#footer-nav .custom-nav ul li a:hover {
+  background-color: var(--yellow);
+}
+
+/* =========================================================================================================
+                                         Footer nav part Css End Here
+===========================================================================================================*/
